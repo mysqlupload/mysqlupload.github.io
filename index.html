@@ -24,20 +24,31 @@
                 </div>
                 <div class="col-11-sm description">
                     <h5 class='header'>Mysql Upload tool</h5>
-                    <div>mysqlupload is a simple SQL shell with input line editing capabilities. It supports interactive and noninteractive use.</div>
-                    <div>When used interactively, query results are presented in an ASCII-table format. When used</div>
-                    <div>noninteractively (for example, as a filter), the result is presented in tab-separated format.</div>
-                    <div>The output format can be changed using command options.</div>
-                    <div>If you have problems due to insufficient memory for large result sets, use the --quick option.</div>
-                    <div>This forces mysqlupload to retrieve results from the server a row at a time rather than retrieving the entire</div>
-                    <div>result set and buffering it in memory before displaying it. This is done by returning the result set using the</div>
-                    <div>mysqlupload_use_result() C API function in the client/server library rather than</div>
-                    <div>mysqlupload_store_result().</div>
-                    <div>Using mysqlupload is very easy. Invoke it from the prompt of your command interpreter as follows:</div>
-                    <div>   shell&gt; mysqlupload -u user_name -p password db_name file</div>
-                    <div>Typing Control+C causes mysqlupload to attempt to kill the current statement. If this cannot be done, or Control+C is</div>
-                    <div>typed again before the statement is killed, mysqlupload exits.</div>
-                    <div>On Unix, the mysqlupload client logs statements executed interactively to a history file.</div>
+                    <div>
+            <p>
+            The MySQL upload tool allows users to easily import data into MySQL databases.
+            The following import options are supported:
+            </p>
+
+            <ul>
+
+                <li><span>SQL Insert Statements: the import tool can read SQL statements
+                from a file and execute them against the MySQL database</span></li>
+            </ul>
+
+            <p>The MySQL upload tool prompts the user for information about the table to which the import
+                the data, the way in which the columns match up to the imported data, and whether to
+                perform certain operations such as wrapping columns in quotes. The import tool can
+                then execute the import, or generate the SQL insert statements necessary to perform the import.</p>
+
+            <p>
+            The MySQL data import tool allows users to specify whether or not to halt on error, and whether to
+            send any inserts to the database in batches or one statement at a time. Users can also
+            choose to not actually update the data, but instead write the generated SQL insert
+            statements to an output file for later execution.
+            </p>
+                    </div>
+
 
                     <h5 class='header' id='download'>Download</h5>
                     <table>
@@ -45,13 +56,13 @@
                             <td>Linux (x32)</td>
                             <td><a href='mysqlupload.linux.x32'>mysqlupload.linux.x32</a></td>
                             <td>5.2M</td>
-                            <td>4a23a6713e12b1e4363c0a5fb49a5f47</td>
+                            <td>966c08560ddaf21c7f5222c0daa3191d</td>
                         </tr>
                         <tr>
                             <td>Linux (x64)</td>
-                            <td><a href='mysqlupload.linux.x32'>mysqlupload.linux.x64</a></td>
+                            <td><a href='mysqlupload.linux.x64'>mysqlupload.linux.x64</a></td>
                             <td>6.0M</td>
-                            <td>c58aa1962afef1763bd440542e98abbf</td>
+                            <td>eccf4bb40dc2b955b75b3e5266183813</td>
                         </tr>
                         <tr>
                             <td>Windows (x32)</td>
@@ -69,13 +80,13 @@
                             <td>FreeBSD (x32)</td>
                             <td><a href='mysqlupload.freebsd.x32'>mysqlupload.freebsd.x32</a></td>
                             <td>5.3M</td>
-                            <td>bf09e83575dadebc67f40531cc25f281</td>
+                            <td>85b8e6aada08776d02b8a1932afc8586</td>
                         </tr>
                         <tr>
                             <td>FreeBSD (x64)</td>
                             <td><a href='mysqlupload.freebsd.x64'>mysqlupload.freebsd.x64</a></td>
                             <td>6.0M</td>
-                            <td>8f9047854cc8917f1280973749dba0d7</td>
+                            <td>05226460db7c33c6c2b853f4f14363fa</td>
                         </tr>
                     </table>
 
