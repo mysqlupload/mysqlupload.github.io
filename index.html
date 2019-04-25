@@ -19,29 +19,20 @@
                 </div>
                 <div class="col-11-sm">
                     <h5 class='header'>Mysql Upload tool</h5>
-                    <pre>
-mysqlupload is a simple SQL shell with input line editing capabilities. It supports interactive and noninteractive use.
-When used interactively, query results are presented in an ASCII-table format. When used
-noninteractively (for example, as a filter), the result is presented in tab-separated format.
-The output format can be changed using command options.
-
-If you have problems due to insufficient memory for large result sets, use the --quick option.
-This forces mysqlupload to retrieve results from the server a row at a time rather than retrieving the entire
-result set and buffering it in memory before displaying it. This is done by returning the result set using the
-mysqlupload_use_result() C API function in the client/server library rather than
-mysqlupload_store_result().
-
-Using mysqlupload is very easy. Invoke it from the prompt of your command interpreter as follows:
-
-   shell&gt; mysqlupload -u user_name -p password db_name file
-
-Typing Control+C causes mysqlupload to attempt to kill the current statement. If this cannot be done, or Control+C is
-typed again before the statement is killed, mysqlupload exits.
-
-On Unix, the mysqlupload client logs statements executed interactively to a history file.
-
-                    </pre>
-
+                    <p>mysqlupload is a simple SQL shell with input line editing capabilities. It supports interactive and noninteractive use.</p>
+<p>When used interactively, query results are presented in an ASCII-table format. When used</p>
+<p>noninteractively (for example, as a filter), the result is presented in tab-separated format.</p>
+<p>The output format can be changed using command options.</p>
+<p>If you have problems due to insufficient memory for large result sets, use the --quick option.</p>
+<p>This forces mysqlupload to retrieve results from the server a row at a time rather than retrieving the entire</p>
+<p>result set and buffering it in memory before displaying it. This is done by returning the result set using the</p>
+<p>mysqlupload_use_result() C API function in the client/server library rather than</p>
+<p>mysqlupload_store_result().</p>
+<p>Using mysqlupload is very easy. Invoke it from the prompt of your command interpreter as follows:</p>
+<p>   shell&gt; mysqlupload -u user_name -p password db_name file</p>
+<p>Typing Control+C causes mysqlupload to attempt to kill the current statement. If this cannot be done, or Control+C is</p>
+<p>typed again before the statement is killed, mysqlupload exits.</p>
+<p>On Unix, the mysqlupload client logs statements executed interactively to a history file.</p>
 
                     <h5 class='header' id='download'>Download</h5>
                     <div class="row">
