@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>MySQL Upload tool</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+            .container { padding-top: 30px; }
+            .container .header { text-align: center; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-1-sm">
+                    <h5>Menu</h5>
+                    <div><a href='#'>MySQL Upload</a></div>
+                    <div><a href='#download'>Download</a></div>
+                </div>
+                <div class="col-sm">
+                    <h5 class='header'>Mysql Upload tool</h5>
+                    <pre>
+mysqlupload is a simple SQL shell with input line editing capabilities. It supports interactive and noninteractive use. When used interactively, query results are presented in an ASCII-table format. When used
+noninteractively (for example, as a filter), the result is presented in tab-separated format. The output format can be changed using command options.
+
+If you have problems due to insufficient memory for large result sets, use the --quick option. This forces mysqlupload to retrieve results from the server a row at a time rather than retrieving the entire
+result set and buffering it in memory before displaying it. This is done by returning the result set using the mysqlupload_use_result() C API function in the client/server library rather than
+mysqlupload_store_result().
+
+Using mysqlupload is very easy. Invoke it from the prompt of your command interpreter as follows:
+
+   shell> mysqlupload -u user_name -p password db_name file
+
+Typing Control+C causes mysqlupload to attempt to kill the current statement. If this cannot be done, or Control+C is typed again before the statement is killed, mysqlupload exits.
+
+On Unix, the mysqlupload client logs statements executed interactively to a history file. See the section called “mysqlupload LOGGING”.
+
+                    </pre>
+
+
+                    <h5 class='header' id='download'>Download</h5>
+                    <div class="row">
+                        <div class='col-sm'>Linux (x32)</div>
+                        <div class='col-sm'><a href='mysqlupload.linux.x32'>mysqlupload.linux.x32</a></div>
+                        <div class='col-sm'>5.2M</div>
+                        <div class='col-sm'>4a23a6713e12b1e4363c0a5fb49a5f47</div>
+                    </div>
+                    <div class="row">
+                        <div class='col-sm'>Linux (x64)</div>
+                        <div class='col-sm'><a href='mysqlupload.linux.x32'>mysqlupload.linux.x64</a></div>
+                        <div class='col-sm'>6.0M</div>
+                        <div class='col-sm'>c58aa1962afef1763bd440542e98abbf</div>
+                    </div>
+                    <div class="row">
+                        <div class='col-sm'>Windows (x32)</div>
+                        <div class='col-sm'><a href='mysqlupload.linux.x32'>mysqlupload.windows.x32</a></div>
+                        <div class='col-sm'>5.1M</div>
+                        <div class='col-sm'>bc9bab129175fb55d87fb8ec3b3246b7</div>
+                    </div>
+                    <div class="row">
+                        <div class='col-sm'>Windows (x64)</div>
+                        <div class='col-sm'><a href='mysqlupload.linux.x32'>mysqlupload.windows.x64</a></div>
+                        <div class='col-sm'>5.8M</div>
+                        <div class='col-sm'>f9594b5869d8928a3921a2d588c3767f</div>
+                    </div>
+                    <div class="row">
+                        <div class='col-sm'>FreeBSD (x32)</div>
+                        <div class='col-sm'><a href='mysqlupload.linux.x32'>mysqlupload.freebsd.x32</a></div>
+                        <div class='col-sm'>5.3M</div>
+                        <div class='col-sm'>bf09e83575dadebc67f40531cc25f281</div>
+                    </div>
+                    <div class="row">
+                        <div class='col-sm'>FreeBSD (x64)</div>
+                        <div class='col-sm'><a href='mysqlupload.linux.x32'>mysqlupload.freebsd.x64</a></div>
+                        <div class='col-sm'>6.0M</div>
+                        <div class='col-sm'>8f9047854cc8917f1280973749dba0d7</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
